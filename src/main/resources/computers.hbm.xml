@@ -1,0 +1,24 @@
+<?xmlversion="1.0"?>
+<!DOCTYPEhibernate-mappingPUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="DBHibernate.Computers" table="Computers">
+        <id name="computerID" type="int" column="ComputerID">
+            <generator class="increment"/>
+        </id>
+        <property name="name">
+            <column name="Name"/>
+        </property>
+        <property name="producentID">
+            <column name="ProducentID"/>
+        </property>
+        <property name="quantity" type="int">
+            <column name="Quantity"/>
+        </property>
+        <property name="price">
+        	<column name="Price" type="int"/>
+        </property>
+    </class>
+</hibernate-mapping>
